@@ -1,0 +1,153 @@
+﻿
+ /* Định dạng slide chạy quảng cáo , sự kiện */
+body {
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+    .slide input {
+        display: none;
+    }
+
+.st {
+    width: 20%;
+    transition: 2s;
+}
+
+    .st img {
+        width: 988px;
+        height: 344px;
+    }
+
+nav-m {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: block;
+}
+
+.m-btn {
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+    .m-btn:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .m-btn:hover {
+        background-color: red;
+    }
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.nav-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+    .nav-auto div {
+        border: 2px solid rgba(255,255,255,0.3);
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+        .nav-auto div:not(:last-child) {
+            margin-right: 30px;
+            justify-content: center;
+        }
+
+#radio1:checked ~ .nav-auto .a-b1 {
+    background-color: aqua;
+}
+
+#radio2:checked ~ .nav-auto .a-b2 {
+    background-color: aqua;
+}
+
+#radio3:checked ~ .nav-auto .a-b3 {
+    background-color: aqua;
+}
+
+#radio4:checked ~ .nav-auto .a-b4 {
+    background-color: aqua;
+}
+
+.card {
+    box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height :400px;
+    margin: 50px;
+    text-align: center;
+    font-family: arial;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+    .card button:hover {
+        opacity: 0.7;
+    }
+ul.product {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 400px;
+    width: 200px;
+}
+    ul.product.li {
+        flex-basis: 33%;
+    }
